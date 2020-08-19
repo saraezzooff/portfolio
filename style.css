@@ -32,13 +32,8 @@
 
 }
 
-.project p{
-    width: 400px;
-}
-
 .project img{
     padding-right: 10px;
-    margin-left: 10px;
 }
 
 .title h4{
@@ -55,7 +50,7 @@
 
 p{
     margin-top: 20px;
-
+    width: 400px;
 }
 h2, h4{
     text-align: center;
