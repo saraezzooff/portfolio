@@ -64,3 +64,9 @@ h4{
     margin-top: 10px;
     margin-bottom: 50px;
 }
+
+@media screen and (max-width: 7000px) {
+    .project{
+        margin-botoom: 15px;
+    }
+}
