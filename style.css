@@ -5,16 +5,54 @@
     padding: 0;
     font-family: 'poppins',sans-serif;
 }
+
+nav{
+    height: 60px;
+    width: 100%;
+    background-color: #2d4059;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.logo{
+    margin-left: 50px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    margin-right: 100px;
+  
+}
+
+nav ul li {
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover{
+    cursor: pointer;
+
+}
+
+
 .container{
 
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 
 }
 .project-row{
     
-    margin-left: 100px;
+    margin-left: 150px;
     margin-bottom: 50px;
    
 }
@@ -26,7 +64,7 @@
 }
 .project{
     display: flex;
-    width: 600px;
+    width: 550px;
     float: left;
     /* width: 50%; */
 
@@ -65,8 +103,100 @@ h4{
     margin-bottom: 50px;
 }
 
-@media screen and (max-width: 7000px) {
-    .project{
+/* practice page */
+.practice-container{
+    margin-top: 100px;
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.practice-main{
+
+    width: 400px;
+    margin-left: 30px;
+
+}
+
+.practice-content ul {
+    list-style: none;
+    display: flex;
+}
+.practice-img{
+
+}
+.practice-img img  {
+    width: 400px;
+    /* height: 250px; */
+    overflow: hidden;
+    height: 250px;
+    /* To remove gap between img and box */
+    border-style: none;
+    vertical-align: middle;
+}
+
+/* .practice-img img{
+    margin-left: 40px;
+    margin-top: 30px;
+   
+} */
+.practice-content{
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-top: none;
+
+}
+
+/* list icons */
+.fa-html5{
+    font-size: 36px;
+    margin: 10px 20px;
+    color: #E96228;
+}
+.fa-css3-alt{
+    font-size: 36px;
+    margin: 10px 20px;
+    color: #016DB5;
+}
+
+.fa-js-square
+{
+    font-size: 36px;
+    margin: 10px 20px;
+    color: #e11d74;
+}
+
+.fa-bootstrap{
+    font-size: 36px;
+    margin: 10px 20px;
+    color:#590995;
+}
+.practice-content h3{
+    margin: 10px 20px;
+    color: #333;
+}
+.practice-content button{
+    margin-left: 20px;
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    background: #008891;
+    margin: 10px 20px;
+    cursor: pointer;
+}
+
+.practice-content button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width: 700px) {
+    .project, .practice-main{
         margin-bottom: 15px;
     }
+
+  
+
 }
